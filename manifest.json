@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Интерактивный помощник",
+	"name": "Портативный поисковик",
 	"version": "1.0.0",
 	"content_scripts": [
 	  {
@@ -13,5 +13,6 @@
 	"browser_action": {
       "default_title": "Тестирование разработки расширения",      // optional; shown in tooltip
       "default_popup": "main.html"        // optional
-	}
+	},
+	"content_security_policy": "script-src 'self' https://cse.google.com; object-src 'self'"
 }
